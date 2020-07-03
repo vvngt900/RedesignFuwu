@@ -395,12 +395,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #3B73B9;
+  background: linear-gradient(#3B73B9, #3B73B9);
 }
 
 .text-primary {
-  color: #fdcc52;
+  color: #153ba5;
 }
 
 .no-gutter > [class*='col-'] {
