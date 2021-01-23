@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>Fuwu</title>
-
+  <link rel="icon" href="https://fuwu.s3.ap-south-1.amazonaws.com/fuwu-.png" />
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -46,6 +46,32 @@
       padding-top: 180px;
   }
 
+
+  /*Custom CSS*/
+  .carousel-indicators {
+  	background-color:#000;
+  	position: absolute;
+  	bottom: 200px;
+  	z-index: 15;
+  	width: 30px;
+  	margin-left: 20px;
+  	list-style: none;
+  	text-align: center;
+  	right: 5%;
+  }
+  .carousel-indicators li{
+  	display: block;
+  	width: 10px;
+  	height: 10px;
+  	margin-bottom: 10px;
+  }
+  .carousel-indicators .active {
+  	width: 12px;
+  	height: 12px;
+  	margin-bottom: 10px;
+  	background-color: #fff;
+  }
+
     /*.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
       margin-left: 0;
       margin-right: 0;
@@ -67,7 +93,7 @@ section {
   <nav class="navbar navbar-expand-lg fixed-top shadow-lg p-3 mb-5 bg-white rounded" id="mainNav" style="background-color:white; min-height: 160px;">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="https://fuwu.s3.ap-south-1.amazonaws.com/fuwuCrop.png"
+        <img src="https://firebasestorage.googleapis.com/v0/b/estore-5fb9b.appspot.com/o/Fuwu%2Ffuwu.png?alt=media&token=87b78727-a88d-441e-8435-d510d1a5a2bc"
           style="width: 100px; height: 45px; padding:5px;" />
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -81,17 +107,17 @@ section {
           <li class="nav-item" style="padding: 5px;">
             <a class="nav-link js-scroll-trigger" href="#download" style="color: black;">
               <img
-                src="https://fuwu.s3.ap-south-1.amazonaws.com/NavIcons/Icon+250x+250px-04.png"
+                src="https://firebasestorage.googleapis.com/v0/b/estore-5fb9b.appspot.com/o/Fuwu%2FIcon%20250x%20250px-04.png?alt=media&token=26425828-7888-49fb-a182-0dc44040880b"
                 style="width: 20px; height: 20px;" /> Sign Up For Free</a>
           </li>
           <li class="nav-item" style="padding: 5px;">
             <a class="nav-link js-scroll-trigger" href="#features" style="color: black;"><img
-                src="https://fuwu.s3.ap-south-1.amazonaws.com/NavIcons/Icon+250x+250px-02.png"
+                src="https://firebasestorage.googleapis.com/v0/b/estore-5fb9b.appspot.com/o/Fuwu%2FIcon%20250x%20250px-02.png?alt=media&token=9af4ed0f-4644-4a92-bc35-e4d07d483be2"
                 style="width: 20px; height: 20px;" /> Our Services</a>
           </li>
           <li class="nav-item" style="padding: 5px;">
             <a class="nav-link js-scroll-trigger" href="#contact" style="color: black;"><img
-                src="https://fuwu.s3.ap-south-1.amazonaws.com/NavIcons/Icon+250x+250px-03.png"
+                src="https://firebasestorage.googleapis.com/v0/b/estore-5fb9b.appspot.com/o/Fuwu%2FIcon%20250x%20250px-03.png?alt=media&token=0e518db9-199f-4e4b-8b71-d7f26ca4281e"
                 style="width: 20px; height: 20px;" /> Contact</a>
           </li>
         </ul>
@@ -123,7 +149,7 @@ section {
         </div>
         <div class="d-none d-lg-block col-xl-5 col-lg-5 my-auto" style="padding: 0px;" >
           <br/><br/>
-          <img class="img-fluid" src="https://fuwu.s3.ap-south-1.amazonaws.com/BackgroundIcons/Pattern+800+x+750px.png"
+          <img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/estore-5fb9b.appspot.com/o/Fuwu%2FPattern%20800%20x%20750px.png?alt=media&token=0d2c7eb4-da50-4536-9bf6-e6522044a4a2"
             style="height: auto; width: auto; margin-top: 120px; object-fit: contain;" />
           <!--<div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
@@ -141,12 +167,21 @@ section {
         </div>
       </div>
     </div>
+
   </header>
 
-  <section class="download bg-primary" id="download" style="padding-top: 180px;">
+  <section class="download bg-primary" id="download">
     <div class="container">
-      <div class="row align-items-end">
-        <div class="col-lg-7 col-md-12 col-sm-12 my-auto" style="color: white;">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+
+  </div>
+      <div class="row align-items-end" style="height: 100vh;">
+        <div class="col-lg-7 col-md-12 col-sm-12 my-auto" style="color: white; padding-top: 180px;">
           <h2 class="section-heading">Get your <b>Services Featured!</b></h2>
           <p>Our goal is to empower local small scale businesses and service providers with an integrated application to
             enhance their business and make them technologically active.</p>
@@ -156,7 +191,7 @@ section {
           </div>-->
         </div>
         <div class="col-lg-5" style="text-align: right;">
-          <img src="https://fuwu.s3.ap-south-1.amazonaws.com/Loading+(320x650)px-05.png"/>
+          <img src="https://firebasestorage.googleapis.com/v0/b/estore-5fb9b.appspot.com/o/Fuwu%2FLoading%20(320x650)px-05.png?alt=media&token=92440258-28e0-4acd-a05c-4eb2d8074431"/>
         </div>
       </div>
     </div>
@@ -165,11 +200,12 @@ section {
   <section class="features" id="features" style="padding-top: 180px;">
     <div class="container">
       <!--<div class="section-heading text-center">
-        <h2>Unlimited Features, Unlimited Fun</h2> 
+        <h2>Unlimited Features, Unlimited Fun</h2>
         <p class="text-muted">Check out what you can do with this app theme!</p>
         <hr>
       </div>-->
       <div class="row">
+
         <!-- <div class="col-lg-4 my-auto">
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
@@ -252,21 +288,21 @@ section {
           We L<i class="far fa-heart" style="color: white; font-size: 30px;"></i>ve<br/>
           <b>New Friends</b>
         </h2>
-          <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger" style="background-color: white; color: black; font-size: large;"><b>LET,S CHAT</b></a>
+          <a href="https://wa.link/d0wabi" class="btn btn-outline btn-xl js-scroll-trigger" style="background-color: white; color: black; font-size: large;"><b>LET,S CHAT</b></a>
         </div>
         </div>
       <div class="col-md-6 align-self-end" style="text-align: right;">
           <ul class="list-inline list-social justify-content-around">
-                <a href="#" style="padding: 15px; color: white;">
+                <a href="https://www.linkedin.com/company/fuwu" style="padding: 15px; color: white;">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#" style="padding: 15px; color: white;">
+                <a href="https://twitter.com/Fuwu_tweets?s=08" style="padding: 15px; color: white;">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" style="padding: 15px; color: white;">
+                <a href="https://www.facebook.com/fuwuhere/" style="padding: 15px; color: white;">
                   <i class="fab fa-facebook-square"></i>
                 </a>
-                <a href="#" style="padding: 15px; color: white;">
+                <a href="https://www.instagram.com/fuwu_insta?r=nametag" style="padding: 15px; color: white;">
                   <i class="fab fa-instagram"></i>
                 </a>
             </ul>
@@ -276,7 +312,7 @@ section {
     <div class="row" style="height: 70vh;">
     <div class="col align-self-start">
       <div class="row" style="width: 100%; color: white; height: 1px; background-color:white;"></div>
-        
+
       <div class="copyright my-auto" style="text-align: left;">
         <br/>
         <h5>Portions of this content are ©2020 by individual fuwu.in<br/>
@@ -288,13 +324,13 @@ section {
 
     </div>
     </div>
-      
+
     </div>
-   
+
   </section>
 
   <!--<footer style="background-color: #232021; color: white;">
-      
+
     <div class="container">
 
 
